@@ -38,7 +38,7 @@ public class Linked_List {
         }
         Node<Integer> temp = head;
         while(temp!=null){
-            System.out.println(temp.value);
+            System.out.print(temp.value+" -> ");
             temp = temp.next;
         }
         System.out.println("size of linkedList is "+size);
@@ -112,6 +112,17 @@ public class Linked_List {
         Node newNode = new Node(value);
         newNode.next = temp.next;
         temp.next = newNode;
+        size++;
+    }
+
+    public Linked_List reverseLinkedList(Linked_List l){
+        Linked_List result = new Linked_List();
+        Node temp = l.head;
+        while(temp!=null){
+            result.insertAtBeginning((int)(temp.value));
+            temp = temp.next;
+        }
+        return result;
     }
 
 }

@@ -9,5 +9,7 @@ public class MainLL {
         ll.insertAtLast(8);
         ll.insertAtIndex(2,10);
         ll.display();
+      Linked_List result =  ll.reverseLinkedList(ll);
+      result.display();
     }
 }
