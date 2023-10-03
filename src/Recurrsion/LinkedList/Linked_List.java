@@ -41,9 +41,9 @@ public class Linked_List {
             System.out.print(temp.value+" -> ");
             temp = temp.next;
         }
-        System.out.println("size of linkedList is "+size);
-        System.out.println("Head value is "+head.value);
-        System.out.println("Tail value is "+tail.value);
+        System.out.print("size = "+size);
+        System.out.print(" -> Head = "+head.value);
+        System.out.print(" -> Tail = "+tail.value +"\n");
 
     }
 
